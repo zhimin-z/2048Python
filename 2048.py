@@ -180,7 +180,7 @@ class Frame(wx.Frame):
             self.putTile()
             self.drawChange(score)
             if self.isGameOver():
-                if wx.MessageBox(u"Game is over, try again？",u"Game Over",
+                if wx.MessageBox(u"Try again？",u"Game Over",
                         wx.YES_NO|wx.ICON_INFORMATION)==wx.YES:
                     bstScore = self.bstScore
                     self.initGame()
