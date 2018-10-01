@@ -53,7 +53,7 @@ class Frame(wx.Frame):
         self.Show()
     
     def onPaint(self,event):
-        dc = wx.BufferedPaintDC(self,self.buffer)
+        wx.BufferedPaintDC(self,self.buffer)
     
     def onClose(self,event):
         self.saveScore()
